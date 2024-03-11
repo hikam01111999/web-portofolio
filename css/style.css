@@ -21,6 +21,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto' sans-serif;
 
@@ -102,7 +105,14 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
+
 }
+/* .nav nav{
+    position: fixed;
+    width: 100%;
+    
+    left: 40%;
+} */
 .nav ul{
     list-style: none;
     display: flex;
@@ -162,12 +172,25 @@ nav ul li a{
 }
 
 .hero-right img{
-    width: 90%;
+    width: 75%;
+    border-radius: 50%;
+    padding: 10px 10px;
+    border: 4px double var(--primaryIconColor) ;  
+    transition: 2s ease-in-out;
     
 }
+.hero-right img:hover{
+    cursor: pointer;
+    transform: rotateX(150deeg);
+    
+}
+
 .hero-right {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    
+    
 }
 
 
